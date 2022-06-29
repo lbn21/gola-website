@@ -14,7 +14,7 @@
         "headers": [
           {
             "key": "Content-Security-Policy",
-            "value": "default-src 'self'"
+            "value": "default-src 'self'; script-src 'self' 'sha256-4h0vJnCWrgA+iODwUSBz3wsEaygYHXXL8Y0XYGt08bM=' https://www.googletagmanager.com"
           }
         ]
       },
