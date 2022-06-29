@@ -8,6 +8,26 @@
         "destination": "/index.html"
       }
     ],
+    "headers": [
+      {
+        "source": "**/*.@(js!css)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "max-age=31536000, immutable"
+          }
+        ]
+      },
+      {
+        "source": "**/*.@(jpg|jpeg|gif|png)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "max-age=2592000"
+          }
+        ]
+      }
+    ],
     "trailingSlash": false,
     "cleanUrls": true
   }
