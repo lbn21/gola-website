@@ -1,29 +1,29 @@
-<h1>Angular Router App TEST</h1>
-<!-- This nav gives you links to click, which tells the router which route to use (defined in the routes constant in  AppRoutingModule) -->
-<nav>
-  <ul>
-    <li>
-      <a routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page"
-        >Home</a
-      >
-    </li>
-    <li>
-      <a
-        routerLink="/first-component"
-        routerLinkActive="active"
-        ariaCurrentWhenActive="page"
-        >First Component</a
-      >
-    </li>
-    <li>
-      <a
-        routerLink="/second-component"
-        routerLinkActive="active"
-        ariaCurrentWhenActive="page"
-        >Second Component</a
-      >
-    </li>
-  </ul>
+<nav class="navbar sticky-top navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" routerLink="/">
+      <img
+        src="../assets/img/bootstrap-solid.svg"
+        width="30"
+        height="30"
+        alt=""
+      />
+    </a>
+    <ul class="navbar-nav flex-row d-none d-md-flex">
+      <li class="nav-item px-1">
+        <a class="nav-link" routerLink="/first-component">First</a>
+      </li>
+      <li class="nav-item px-1">
+        <a class="nav-link" routerLink="/second-component">Second</a>
+      </li>
+    </ul>
+    <button
+      class="bg-light p-0 border-0 d-md-none"
+      type="button"
+      aria-label="Toggle navigation"
+      (click)="open()"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
 </nav>
-<!-- The routed views render in the <router-outlet>-->
 <router-outlet></router-outlet>
