@@ -1,0 +1,11 @@
+@import '../styles/index.scss';
+
+.navbar-brand img {
+  height: 30px;
+  width: 79px;
+
+  @include media-breakpoint-up(md) {
+    height: 78px;
+    width: 204px;
+  }
+}

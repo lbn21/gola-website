@@ -3,13 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FirstComponent } from './first/first.component';
-import { SecondComponent } from './second/second.component';
+import { ServicesComponent } from './services/services.component';
+import { SecondComponent } from './gallery/second.component';
 import { HomeComponent } from './home/home.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
-  declarations: [AppComponent, FirstComponent, SecondComponent, HomeComponent],
+  declarations: [AppComponent, SecondComponent, SecondComponent, HomeComponent],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,

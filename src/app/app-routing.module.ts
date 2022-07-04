@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { FirstComponent } from './first/first.component';
+import { ServicesComponent } from './services/services.component';
 import { HomeComponent } from './home/home.component';
-import { SecondComponent } from './second/second.component';
+import { SecondComponent } from './gallery/second.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'first-component', component: FirstComponent },
+  { path: 'services', component: ServicesComponent },
   { path: 'second-component', component: SecondComponent },
 ];
 
