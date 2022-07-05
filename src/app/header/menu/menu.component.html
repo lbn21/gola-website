@@ -1,0 +1,26 @@
+<div class="offcanvas-header">
+  <h5 class="offcanvas-title">&nbsp;</h5>
+  <button
+    type="button"
+    class="btn-close text-reset"
+    aria-label="Close"
+    (click)="activeOffcanvas.dismiss('Cross click')"
+  ></button>
+</div>
+<div class="offcanvas-body">
+  <div class="list d-flex flex-column align-items-center">
+    <a
+      routerLink="/"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+      class="btn btn-link"
+      >Home
+    </a>
+    <a routerLink="/services" routerLinkActive="active" class="btn btn-link"
+      >Services</a
+    >
+    <a routerLink="/contact" routerLinkActive="active" class="btn btn-link"
+      >Contact</a
+    >
+  </div>
+</div>
