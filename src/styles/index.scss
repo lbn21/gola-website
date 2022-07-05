@@ -1,8 +1,8 @@
-// 1. Default variable overrides here
-@import "variables/colors";
+// 1. Core for importing to other components
+@import 'core';
 
-// 2. All of Bootsrap import
-@import "../../node_modules/bootstrap/scss/bootstrap";
+// 2. Bootsrap components + others
+@import 'components';
 
 // 3. Additional custom code here
-@import "custom";
+@import 'custom';
