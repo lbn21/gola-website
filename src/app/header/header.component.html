@@ -1,7 +1,7 @@
 <nav class="navbar sticky-top navbar-light bg-primary">
   <div class="container">
     <a class="navbar-brand" routerLink="/">
-      <img src="../assets/img/logo.svg" width="205" height="78" alt="" />
+      <app-logo [responsive]="true"></app-logo>
     </a>
     <ul class="navbar-nav flex-row d-none d-md-flex">
       <li class="nav-item px-1">
@@ -23,12 +23,24 @@
       </li>
     </ul>
     <button
-      class="bg-primary p-0 border-0 d-md-none"
+      class="bg-primary p-0 border-0 d-md-none d-flex"
       type="button"
       aria-label="Toggle navigation"
       (click)="open()"
     >
-      <span class="navbar-toggler-icon"></span>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        fill="currentColor"
+        class="bi bi-list"
+        viewBox="0 0 16 16"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+        />
+      </svg>
     </button>
   </div>
 </nav>

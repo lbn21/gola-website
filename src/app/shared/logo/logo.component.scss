@@ -1,6 +1,6 @@
-@import '../../styles/core';
+@import '../../../styles/core';
 
-.navbar-brand svg {
+.responsive {
   height: 30px;
   width: 79px;
 
@@ -8,4 +8,8 @@
     height: 78px;
     width: 204px;
   }
+}
+
+.primary path {
+  fill: $primary;
 }

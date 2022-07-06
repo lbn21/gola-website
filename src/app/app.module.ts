@@ -10,6 +10,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
 import { ServicesComponent } from './components/services/services.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { LogoComponent } from './shared/logo/logo.component';
 
 @NgModule({
   declarations: [
@@ -17,9 +18,10 @@ import { ContactComponent } from './components/contact/contact.component';
     HeaderComponent,
     MenuComponent,
     FooterComponent,
+    HomeComponent,
     ServicesComponent,
     ContactComponent,
-    HomeComponent,
+    LogoComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

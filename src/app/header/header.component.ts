@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { NgbConfig, NgbOffcanvas } from '@ng-bootstrap/ng-bootstrap';
+import { NgbOffcanvas } from '@ng-bootstrap/ng-bootstrap';
+import { right } from '@popperjs/core';
 
 import { MenuComponent } from './menu/menu.component';
 
@@ -9,13 +10,13 @@ import { MenuComponent } from './menu/menu.component';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
-  constructor(ngbConfig: NgbConfig, private offcanvasService: NgbOffcanvas) {
-    ngbConfig.animation = false;
-  }
+  constructor(private offcanvasService: NgbOffcanvas) {}
 
   open() {
     const offcanvasRef = this.offcanvasService.open(MenuComponent, {
       position: 'top',
+      animation: false,
+      panelClass: 'menu-panel',
     });
   }
 }
